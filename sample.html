@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>this is sample html file</title>
+</head>
+<body>
+ <div style="position:absolute;right:500px;" id="parent1">
+ 	<img id="image1" style = "width: 50px;height: 50px; position: absolute;" src="Assets/PNG/AF.png">
+ 	<img style = "width: 50px;height: 50px; position: absolute;" src="Assets/PNG/AF.png">
+ </div>
+ <div style="background: blue; height: 200px;width: 200px;position: absolute;top:400px;" id="parent">
+
+ </div>
+ <button onclick="checkit()">checkmenow</button>
+ <script type="text/javascript">
+ 	function checkit() {
+		alert(document.getElementById("parent1").querySelectorAll("img").length);
+ 		document.getElementById("parent").appendChild(document.getElementById("parent1").querySelectorAll("img")[0]);
+		 alert(document.getElementById("parent1").querySelectorAll("img").length);
+ 	}
+	 
+ </script>
+</body>
+</html>
